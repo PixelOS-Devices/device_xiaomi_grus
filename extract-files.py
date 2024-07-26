@@ -33,10 +33,16 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
 }
 
+blob_fixups: blob_fixups_user_type = {
+    'vendor/lib/hw/com.qti.chi.override.so': blob_fixup()
+    .sig_replace('4F F4 FA 62 11', '4F F0 00 02 11'),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     'grus',
     'xiaomi',
     lib_fixups=lib_fixups,
+    blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,
 )
 
