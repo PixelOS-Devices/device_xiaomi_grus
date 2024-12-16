@@ -224,7 +224,7 @@ vendor/etc/sdr_config.cfg
 vendor/firmware/goodix_gt9886_limit_f2.tporder
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
 vendor/lib64/libhvx_proxy_stub.so
 
